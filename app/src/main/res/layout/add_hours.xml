@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:id="@+id/datePickerID"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/textlines">
+
+        <TextView
+            android:text="@string/workedhm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light"
+            android:background="?attr/colorControlActivated"
+            />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="HH"
+            android:ems="10"
+            android:id="@+id/enteHourID"
+            android:layout_weight="1"
+            android:layout_width="40sp"
+            android:gravity="center"
+            android:textColorHint="@android:color/background_light"
+            android:background="?attr/colorControlActivated"/>
+
+        <EditText
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="MM"
+            android:ems="10"
+            android:gravity="center"
+            android:id="@+id/enterMinuteID"
+            android:textColorHint="@android:color/background_light"
+            android:layout_weight="1"
+            android:background="?attr/colorControlActivated"/>
+    </LinearLayout>
+
+</LinearLayout>

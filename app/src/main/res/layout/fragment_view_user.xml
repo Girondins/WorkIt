@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.girondins.workit.ViewUser"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="275dp"
+            android:layout_height="60dp"
+            android:id="@+id/workerName"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_weight="0.27"
+            android:background="@drawable/eraser"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/hourListID"
+        android:layout_height="350dp"
+        android:layout_weight="0.44" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_weight="0.35">
+
+        <TextView
+            android:text="TextView"
+            android:id="@+id/workedView"
+            android:layout_height="40sp"
+            android:layout_width="150sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_height="40sp"
+            android:id="@+id/incView"
+            android:layout_width="125dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/addWorkHoursBtn"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/calend"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/monthLayout"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded"
+        android:layout_gravity="center">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/monthView"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yearView"
+            android:layout_weight="1"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+</LinearLayout>

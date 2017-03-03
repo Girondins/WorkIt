@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:background="@drawable/monday">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@android:drawable/presence_online"
+        android:id="@+id/weekDayPicID"
+        android:layout_weight="1"
+        android:layout_height="50sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:id="@+id/dateViewID"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:id="@+id/hoursWorkedViewID"
+        android:layout_weight="1"
+        android:gravity="center"/>
+</LinearLayout>
